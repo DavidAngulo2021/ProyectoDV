@@ -1,0 +1,52 @@
+﻿@model Cliente.Models.TraceViewModel
+
+<div class=" card text-primary">
+    <div class="card-header text-center">
+        <h5>Crear Producto</h5>
+    </div>
+    <div class=" card-body text-center">
+        <div class=" col-md-12">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label></label>
+                    <input asp-for="Identificador" class="form-control" placeholder="Nombre">
+                    <span asp-validation-for="Identificador" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Fecha y Hora</label>
+                    <input asp-for="FechaYhora" class="form-control" type="datetime-local" placeholder="Fecha y Hora">
+                    <span asp-validation-for="FechaYhora" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label></label>
+                    <input asp-for="Longitud" class="form-control" placeholder="Longitud">
+                    <span asp-validation-for="Longitud" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <input asp-for="Latitud" class="form-control" placeholder="Latitud">
+                    <span asp-validation-for="Latitud" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <input asp-for="Dispositivo" class="form-control" placeholder="Dispositivo">
+                    <span asp-validation-for="Dispositivo" class="text-danger"></span>
+                </div>
+                <div class=" card-footer text-center">
+                    <div class="form-group">
+                        <input type="submit" value="Guardar" class="btn btn-outline-primary btn-sm" />
+                        <a asp-action="Index" class="btn btn-outline-success btn-sm">Volver a la Lista</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
